@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1" />
+ <title>Web Story</title>
+ <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <div class="container">
+   <h1>📰 Web Story From URL</h1>
+   <input type="text" id="urlInput" placeholder="Paste news/article URL here" />
+   <button onclick="fetchStory()">Generate Story</button>
+   <div id="loader" class="loader hidden">Loading...</div>
+   
+   <div class="card-container">
+     <button id="leftBtn" class="nav-button left" onclick="navigatePrevious()">‹</button>
+     <button id="rightBtn" class="nav-button right" onclick="navigateNext()">›</button>
+     <div id="cardDisplay"></div>
+   </div>
+ </div>
+ <script src="script.js"></script>
+</body>
+</html>
